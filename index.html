@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>GAME</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="dash">
+        <div class="heading">
+          <h1>ROCK</h1>
+          <h1>PAPER</h1>
+          <h1>SCISSOR</h1>
+        </div>
+        <div class="scorecard">
+          <div class="compscore">
+            <h3 class="scorename">COMPUTER</h3>
+            <h3 class="scorename">SCORE</h3>
+            <h2 id="aiscr">0</h2>
+          </div>
+          <div class="humscore">
+            <h3 class="scorename">YOUR</h3>
+            <h3 class="scorename">SCORE</h3>
+            <h2 id="humanscr">0</h2>
+          </div>
+        </div>
+      </div>
+      <div class="options" id="options" >
+        <div class="stone  leftcor" id="stone"></div>
+        <div class="scissor rightcor" id="scissor"></div>
+        <div class="paper bottommid" id="paper"></div>
+        <div class="bigtriangle"></div>
+        <div class="childtriangle"></div>
+      </div>
+      <div class="result" id="result">
+        <div class="left">
+          <h2 class="pickh2">YOU PICKED</h2>
+            <div class="topgreen leftcor" id="userwin">
+              <div class="midgreen">
+                <div class="lowgreen">
+                </div>
+              </div>
+            </div>
+            <div class="userselect selects" id="uss">
+          </div>
+        </div>
+        <div class="mid">
+          <h1 id="whowon"></h1>
+          <h2 id="h2res"></h2>
+          <button class="btnplay" id="playagain">PLAY AGAIN</button>
+        </div>
+        <div class="right">
+          <h2 class="pickh2">PC PICKED</h2>
+            <div class="topgreen rightcor" id="pcwin">
+                <div class="midgreen">
+                  <div class="lowgreen">
+                  </div>
+                </div>
+              </div>
+          <div class="pcselect selects" id="pcs"></div>
+        </div>
+      </div>
+    </div>
+    <div class="rulesbox"
+     id="ruleb">
+      <div class="exit" id="exit">
+        <h1>X</h1>
+      </div>
+      <h1>Game Rules</h1>
+      <ul>
+        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+        <li>
+          Agree ahead of time whether you’ll count off “rock, paper, scissors,
+          shoot” or just “rock, paper, scissors.”
+        </li>
+        <li>
+          Use rock, paper, scissors to settle minor decisions or simply play to
+          pass the time
+        </li>
+        <li>
+          If both players lay down the same hand, each player lays down another
+          hand
+        </li>
+      </ul>
+    </div>
+    <div class="buttons">
+      <button class="btnrule" style="margin-right: 1vh;" id="buttonresetgame">RESET</button>
+
+      <button class="btnrule" style="margin-right: 1vh;" id="buttonendgame">END GAME</button>
+    
+      <button onclick="RuleFunction()" class="btnrule" id="buttonrule">RULES</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
